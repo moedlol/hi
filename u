@@ -910,7 +910,7 @@ createButton("Chaos TOAD", function()
                     sound:Destroy()
                 end)
             end
-            task.wait(0.5)  -- Slightly slower to prevent extreme spam
+            task.wait(0.04)  -- Slightly slower to prevent extreme spam
         end
     end)
     coroutine.resume(rain)
