@@ -900,7 +900,7 @@ createButton("Chaos TOAD", function()
                 mesh.MeshId = "rbxassetid://7234998844"
                 mesh.TextureId = "rbxassetid://1009824086"
 
-                task.delay(9, function()  -- Auto-remove after 3 seconds to prevent lag
+                task.delay(7, function()  -- Auto-remove after 3 seconds to prevent lag
                     if part then
                         part:Destroy()
                     end
@@ -910,7 +910,7 @@ createButton("Chaos TOAD", function()
                     sound:Destroy()
                 end)
             end
-            task.wait(0.04)  -- Slightly slower to prevent extreme spam
+            task.wait(0.2)  -- Slightly slower to prevent extreme spam
         end
     end)
     coroutine.resume(rain)
@@ -920,6 +920,7 @@ createButton("Chaos TOAD", function()
     task.wait(999999999999999999)
     h:Destroy()
 end)
+
     createButton("IT'S HOTDOG DAY!!", function()
         local player = game.Players.LocalPlayer
         local character = player.Character
