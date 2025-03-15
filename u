@@ -900,7 +900,7 @@ createButton("Chaos TOAD", function()
                 mesh.MeshId = "rbxassetid://7234998844"
                 mesh.TextureId = "rbxassetid://1009824086"
 
-                task.delay(3, function()  -- Auto-remove after 3 seconds to prevent lag
+                task.delay(9, function()  -- Auto-remove after 3 seconds to prevent lag
                     if part then
                         part:Destroy()
                     end
